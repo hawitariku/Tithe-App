@@ -19,6 +19,7 @@ export default function App() {
     AppInitializer.initialize();
   }, []);
 
+  // Trigger build comment added on 2025-11-24
   return (
     <NavigationContainer>
       <Stack.Navigator 
