@@ -33,7 +33,7 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Validate project
-        run: npx expo doctor
+        run: npx expo-doctor
 
       - name: Trigger EAS Build for iOS
         run: eas build --platform ios --non-interactive --profile production

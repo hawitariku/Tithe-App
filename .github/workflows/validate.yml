@@ -31,7 +31,7 @@ jobs:
           expo-version: latest
 
       - name: Check for code quality issues
-        run: npx expo doctor
+        run: npx expo-doctor
 
       - name: Run tests
         run: |
