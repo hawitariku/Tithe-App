@@ -21,6 +21,7 @@ export default function App() {
 
   // Trigger build comment added on 2025-11-24
   // Second trigger build comment added on 2025-11-25 to test with EXPO_TOKEN
+  // Third trigger build comment added on 2025-11-25 after updating EXPO_TOKEN
   return (
     <NavigationContainer>
       <Stack.Navigator 
@@ -29,67 +30,46 @@ export default function App() {
           headerStyle: {
             backgroundColor: '#6D8C73',
           },
-          headerTintColor: '#FFFFFF',
+          headerTintColor: '#fff',
           headerTitleStyle: {
-            fontWeight: '600',
+            fontWeight: 'bold',
           },
         }}
       >
         <Stack.Screen 
           name="Dashboard" 
           component={Dashboard} 
-          options={{ 
-            title: 'Tithe Tracker',
-            headerTitleAlign: 'center',
-          }} 
+          options={{ title: 'Tithe Tracker Dashboard' }}
         />
         <Stack.Screen 
           name="AddIncome" 
           component={AddIncome} 
-          options={{ 
-            title: 'Add Income',
-            headerTitleAlign: 'center',
-          }} 
-        />
-        <Stack.Screen 
-          name="EnhancedReminders" 
-          component={EnhancedReminders} 
-          options={{ 
-            title: 'Enhanced Reminders',
-            headerTitleAlign: 'center',
-          }} 
-        />
-        <Stack.Screen 
-          name="FutureIncomeReminders" 
-          component={FutureIncomeReminders} 
-          options={{ 
-            title: 'Future Incomes',
-            headerTitleAlign: 'center',
-          }} 
+          options={{ title: 'Add Income' }}
         />
         <Stack.Screen 
           name="Status" 
           component={Status} 
-          options={{ 
-            title: 'Tithe Status',
-            headerTitleAlign: 'center',
-          }} 
+          options={{ title: 'Status' }}
         />
         <Stack.Screen 
           name="Analytics" 
           component={Analytics} 
-          options={{ 
-            title: 'Analytics',
-            headerTitleAlign: 'center',
-          }} 
+          options={{ title: 'Analytics' }}
         />
         <Stack.Screen 
           name="Goals" 
           component={Goals} 
-          options={{ 
-            title: 'Giving Goals',
-            headerTitleAlign: 'center',
-          }} 
+          options={{ title: 'Goals' }}
+        />
+        <Stack.Screen 
+          name="EnhancedReminders" 
+          component={EnhancedReminders} 
+          options={{ title: 'Reminders' }}
+        />
+        <Stack.Screen 
+          name="FutureIncomeReminders" 
+          component={FutureIncomeReminders} 
+          options={{ title: 'Future Income Reminders' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
