@@ -36,6 +36,7 @@ jobs:
         run: npx expo-doctor
 
       - name: Trigger EAS Build for iOS
-        run: eas build --platform ios --non-interactive --profile production
+        run: |
+          eas build --platform ios --non-interactive --profile production
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}

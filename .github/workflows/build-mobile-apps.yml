@@ -36,7 +36,8 @@ jobs:
         run: npx expo-doctor
 
       - name: Trigger EAS Build for Android
-        run: eas build --platform android --non-interactive --profile production
+        run: |
+          eas build --platform android --non-interactive --profile production
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
 
@@ -66,6 +67,7 @@ jobs:
         run: npx expo-doctor
 
       - name: Trigger EAS Build for iOS
-        run: eas build --platform ios --non-interactive --profile production
+        run: |
+          eas build --platform ios --non-interactive --profile production
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
