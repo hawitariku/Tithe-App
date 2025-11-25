@@ -20,6 +20,7 @@ export default function App() {
   }, []);
 
   // Trigger build comment added on 2025-11-24
+  // Second trigger build comment added on 2025-11-25 to test with EXPO_TOKEN
   return (
     <NavigationContainer>
       <Stack.Navigator 
