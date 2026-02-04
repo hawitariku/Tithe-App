@@ -45,22 +45,6 @@ To build an APK for Android:
 npx expo build:android
 ```
 
-## Project Structure
-
-```
-tithe-app/
-├── screens/
-│   ├── Dashboard.js
-│   ├── AddIncome.js
-│   ├── Reminder.js
-│   └── Status.js
-├── components/
-│   ├── IncomeCard.js
-│   └── TitheCard.js
-├── App.js
-├── app.json
-└── package.json
-```
 
 ## Dependencies
 
